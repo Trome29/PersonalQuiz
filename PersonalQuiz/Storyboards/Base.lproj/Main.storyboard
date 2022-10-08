@@ -92,44 +92,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aOi-8z-Dun">
-                                <rect key="frame" x="73.5" y="127" width="173" height="314"/>
+                                <rect key="frame" x="135" y="194" width="50" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOk-E4-bHi">
-                                        <rect key="frame" x="0.0" y="0.0" width="173" height="66.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="🥩">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="JHB-w5-zV6" eventType="touchUpInside" id="MWh-KE-flP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABA-sn-xap">
-                                        <rect key="frame" x="0.0" y="82.5" width="173" height="66.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="🍣">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="49" width="50" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="JHB-w5-zV6" eventType="touchUpInside" id="etZ-33-jZb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nth-X3-g9P">
-                                        <rect key="frame" x="0.0" y="165" width="173" height="66.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="🥕">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="98" width="50" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="JHB-w5-zV6" eventType="touchUpInside" id="CJW-yq-j8L"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLs-vb-KdA">
-                                        <rect key="frame" x="0.0" y="247.5" width="173" height="66.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="🌽">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="147" width="50" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="JHB-w5-zV6" eventType="touchUpInside" id="Sub-Vb-fkY"/>
                                         </connections>
@@ -241,8 +237,8 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MYt-c3-6Xk">
                                 <rect key="frame" x="0.0" y="92.5" width="320" height="4"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUF-jl-9DK">
-                                <rect key="frame" x="16" y="111" width="41.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUF-jl-9DK">
+                                <rect key="frame" x="16" y="101.5" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -252,15 +248,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YcN-ja-mcn" firstAttribute="leading" secondItem="90Y-qw-35V" secondAttribute="leading" constant="16" id="0ZJ-P1-ceC"/>
-                            <constraint firstItem="aOi-8z-Dun" firstAttribute="leading" secondItem="LUF-jl-9DK" secondAttribute="trailing" constant="16" id="7AH-7F-qCy"/>
                             <constraint firstItem="MYt-c3-6Xk" firstAttribute="trailing" secondItem="90Y-qw-35V" secondAttribute="trailing" id="86w-ia-JBR"/>
                             <constraint firstItem="n7D-Bs-lTI" firstAttribute="leading" secondItem="90Y-qw-35V" secondAttribute="leading" constant="16" id="8Sv-4F-WHF"/>
                             <constraint firstItem="90Y-qw-35V" firstAttribute="trailing" secondItem="YcN-ja-mcn" secondAttribute="trailing" constant="16" id="8nN-Ug-H6c"/>
                             <constraint firstItem="aOi-8z-Dun" firstAttribute="centerY" secondItem="MGv-ot-SRG" secondAttribute="centerY" id="DbU-Qq-hKL"/>
                             <constraint firstItem="YcN-ja-mcn" firstAttribute="centerY" secondItem="MGv-ot-SRG" secondAttribute="centerY" id="GEx-yH-bVc"/>
+                            <constraint firstItem="90Y-qw-35V" firstAttribute="trailing" secondItem="LUF-jl-9DK" secondAttribute="trailing" constant="16" id="LSZ-Un-nxt"/>
                             <constraint firstItem="MYt-c3-6Xk" firstAttribute="leading" secondItem="90Y-qw-35V" secondAttribute="leading" id="PWw-qj-ExG"/>
                             <constraint firstItem="MYt-c3-6Xk" firstAttribute="top" secondItem="MGv-ot-SRG" secondAttribute="topMargin" id="Qd7-4f-jkf"/>
-                            <constraint firstItem="LUF-jl-9DK" firstAttribute="top" secondItem="MYt-c3-6Xk" secondAttribute="bottom" constant="14.5" id="cMl-KF-Np4"/>
+                            <constraint firstItem="LUF-jl-9DK" firstAttribute="top" secondItem="MYt-c3-6Xk" secondAttribute="bottom" constant="5" id="cMl-KF-Np4"/>
                             <constraint firstItem="LUF-jl-9DK" firstAttribute="leading" secondItem="90Y-qw-35V" secondAttribute="leading" constant="16" id="l5n-oo-GKQ"/>
                             <constraint firstItem="aOi-8z-Dun" firstAttribute="centerX" secondItem="MGv-ot-SRG" secondAttribute="centerX" id="uKt-3y-i6a"/>
                             <constraint firstItem="n7D-Bs-lTI" firstAttribute="centerY" secondItem="MGv-ot-SRG" secondAttribute="centerY" id="ukx-F1-pKe"/>
@@ -348,7 +344,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rKO-4s-oFg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7EO-ko-8oZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
