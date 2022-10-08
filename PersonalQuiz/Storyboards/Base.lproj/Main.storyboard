@@ -263,13 +263,7 @@
                             <constraint firstItem="90Y-qw-35V" firstAttribute="trailing" secondItem="n7D-Bs-lTI" secondAttribute="trailing" constant="16" id="yPY-t8-0sd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="Kmn-I5-POL">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="XS2-qE-A7L">
-                            <connections>
-                                <segue destination="Gy6-dS-P4d" kind="show" id="JXo-np-PQf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="Kmn-I5-POL"/>
                     <connections>
                         <outlet property="multipleStackView" destination="n7D-Bs-lTI" id="SCp-ZT-v7g"/>
                         <outlet property="questionLabel" destination="LUF-jl-9DK" id="HuL-Se-h5m"/>
@@ -339,6 +333,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="animalDescriptionLabel" destination="Ceu-ss-cYx" id="gCl-J3-eZ4"/>
+                        <outlet property="animalImageLabel" destination="vbj-ie-NqU" id="p59-vo-UoF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="da9-4T-cvq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -350,7 +348,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rKO-4s-oFg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7EO-ko-8oZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -363,9 +361,6 @@
             <point key="canvasLocation" x="789" y="3"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="AZd-LQ-zfc"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

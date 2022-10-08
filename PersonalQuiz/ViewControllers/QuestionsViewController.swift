@@ -29,7 +29,6 @@ class QuestionsViewController: UIViewController {
     }
     @IBOutlet var rangedLabels: [UILabel]!
     
-    
     private let questions = Question.getQuestions()
     private var answerChosen: [Answer] = []
     private var questionIndex = 0
@@ -43,12 +42,17 @@ class QuestionsViewController: UIViewController {
         increaseFoodButtons()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+            resultVC.answers = answerChosen
+        }
+    
     
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
         guard let buttonIndex = singleButtons.firstIndex(of: sender) else { return }
         let currentAnswer = currentAnswers[buttonIndex]
         answerChosen.append(currentAnswer)
-        
+
         nextQuestion()
     }
     
@@ -58,12 +62,14 @@ class QuestionsViewController: UIViewController {
                 answerChosen.append(answer)
             }
         }
+
         nextQuestion()
     }
     
     @IBAction func rangedAnswerButtonPressed() {
         let index = lrintf(rangedSlider.value)
         answerChosen.append(currentAnswers[index])
+        
         nextQuestion()
     }
 }
@@ -138,9 +144,6 @@ extension QuestionsViewController {
     }
     
     private func increaseFoodButtons() {
-//        for button in zip(singleButtons, answers) {
-//            button.setTitle(answer.title, for: .normal)
-//        }
         singleButtons.forEach { button in
             button.titleLabel?.font = .systemFont(ofSize: 35.0)
         }
