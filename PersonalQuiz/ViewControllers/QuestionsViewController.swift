@@ -47,12 +47,10 @@ class QuestionsViewController: UIViewController {
             resultVC.answers = answerChosen
         }
     
-    
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
         guard let buttonIndex = singleButtons.firstIndex(of: sender) else { return }
         let currentAnswer = currentAnswers[buttonIndex]
         answerChosen.append(currentAnswer)
-
         nextQuestion()
     }
     
@@ -62,14 +60,12 @@ class QuestionsViewController: UIViewController {
                 answerChosen.append(answer)
             }
         }
-
         nextQuestion()
     }
     
     @IBAction func rangedAnswerButtonPressed() {
         let index = lrintf(rangedSlider.value)
         answerChosen.append(currentAnswers[index])
-        
         nextQuestion()
     }
 }
@@ -96,7 +92,6 @@ extension QuestionsViewController {
         
         // Set navigation title
         title = "Вопрос № \(questionIndex + 1) из \(questions.count)"
-        
         showCurrentAnswers(for: currentQuestion.responseType)
     }
     
@@ -110,7 +105,6 @@ extension QuestionsViewController {
     
     private func showSingleStackView(with answers: [Answer]) {
         singleStackView.isHidden.toggle()
-        
         for (button, answer) in zip(singleButtons, answers) {
             button.setTitle(answer.title, for: .normal)
         }
@@ -118,7 +112,6 @@ extension QuestionsViewController {
     
     private func showMultipleStackView(with answers: [Answer]) {
         multipleStackView.isHidden.toggle()
-        
         for (label, answer) in zip(multipleLabels, answers) {
             label.text = answer.title
         }
@@ -126,21 +119,17 @@ extension QuestionsViewController {
     
     private func showRangedStackView(with answers: [Answer]) {
         rangedStackView.isHidden.toggle()
-        
         rangedLabels.first?.text = answers.first?.title
         rangedLabels.last?.text = answers.last?.title
     }
     
     private func nextQuestion() {
         questionIndex += 1
-        
         if questionIndex < questions.count {
             updateUI()
             return
         }
-        
         performSegue(withIdentifier: "showResult", sender: nil)
-        
     }
     
     private func increaseFoodButtons() {

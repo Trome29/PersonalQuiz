@@ -13,14 +13,12 @@ class ResultViewController: UIViewController {
     @IBOutlet var animalDescriptionLabel: UILabel!
     
     var answers: [Answer]!
-    var animals: [Character] = []
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        
-        calculateResult()
+
+        getResult(with: getRepeatingAnimal())
     }
     
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
@@ -31,8 +29,15 @@ class ResultViewController: UIViewController {
 // MARK: - Private Methods
 extension ResultViewController {
     
-    private func calculateResult() {
-        answers.forEach { animals.append($0.animal.rawValue) }
-        
+    private func getRepeatingAnimal() -> Animal? {
+        return Dictionary(
+            grouping: answers,
+            by: { $0.animal }
+        ).sorted(by: {$0.value.count > $1.value.count}).first?.key
+    }
+    
+    private func getResult(with animal: Animal?) {
+        animalTypeLabel.text = "Вы - \(animal?.rawValue ?? "🐶")"
+        animalDescriptionLabel.text = animal?.definition
     }
 }
