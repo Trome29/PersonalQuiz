@@ -207,17 +207,17 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HLf-Op-cNs">
                                         <rect key="frame" x="-2" y="0.0" width="292" height="31"/>
                                     </slider>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="151" translatesAutoresizingMaskIntoConstraints="NO" id="mSY-pX-CH6">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mSY-pX-CH6">
                                         <rect key="frame" x="0.0" y="46" width="288" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFY-Nf-eeg">
-                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="144" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9O-N4-arJ">
-                                                <rect key="frame" x="219.5" y="0.0" width="68.5" height="20.5"/>
+                                                <rect key="frame" x="144" y="0.0" width="144" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -332,7 +332,13 @@
                             <constraint firstItem="L6Y-AW-nAE" firstAttribute="trailing" secondItem="ERA-hp-FSh" secondAttribute="trailing" constant="16" id="uX4-jg-xSJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="CAx-Oj-YDg"/>
+                    <navigationItem key="navigationItem" title="Результат" id="CAx-Oj-YDg">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="ZLC-b4-DtI">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="Gy6-dS-P4d" id="X68-0s-WdG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="da9-4T-cvq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
